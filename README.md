@@ -7,7 +7,7 @@ On Chrome
 
 ![](chrome_motivation_lysak.png)
 
-And Firefox with Chrome Store Foxified
+And Firefox with [Chrome Store Foxified](https://addons.mozilla.org/uk/firefox/addon/chrome-store-foxified "Chrome Store Foxified ")
 
 ![](firefox_motivation_lysak.png)
 
