@@ -16,4 +16,5 @@ And Firefox with [Chrome Store Foxified](https://addons.mozilla.org/uk/firefox/a
 add show default page in firefox like: moz-extension://6dc84492-a1e2-4a2b-aa95-045b9b2deaf9/dashboard.html
 
 motivation.crx - file for firefox
+
 for chrome in chrome://extensions/ select "load unpacked exstension" and select clone folder
