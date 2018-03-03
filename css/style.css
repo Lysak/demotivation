@@ -91,3 +91,8 @@ footer {
   -webkit-flex-direction: row;
   -webkit-justify-content: center;
 }
+
+#app {
+	-moz-user-select: none;
+	user-select: none;
+}
