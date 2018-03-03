@@ -4,17 +4,10 @@ Your age.
 
 With ubuntu font and default chrome incognito mode color
 
-On Chrome
+For Chrome
 
 ![](chrome_motivation_lysak.png)
 
-And Firefox with [Chrome Store Foxified](https://addons.mozilla.org/uk/firefox/addon/chrome-store-foxified "Chrome Store Foxified ")
+For Firefox add addon from [addons.mozilla.org](https://addons.mozilla.org/ru/firefox/addon/motivation-new-tab/ "https://addons.mozilla.org/ru/firefox/addon/motivation-new-tab/")
 
 ![](firefox_motivation_lysak.png)
-
-
-add show default page in firefox like: moz-extension://6dc84492-a1e2-4a2b-aa95-045b9b2deaf9/dashboard.html
-
-motivation.crx - file for firefox
-
-for chrome in chrome://extensions/ select "load unpacked exstension" and select clone folder
