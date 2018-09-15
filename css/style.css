@@ -27,14 +27,14 @@ body {
 
 body, input {
   display: -webkit-flex;
-  background-color: #303030;
+  background-color: #383c4a;
   -moz-user-select: none;
   user-select: none;
 
 }
 
 .age-label {
-  color: #303030;
+  color: white;
   font-size: 1.2rem;
   line-height: 1;
   margin: 0 0 0 2px;
