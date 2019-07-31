@@ -80,15 +80,9 @@ body {
 
 body, input {
   display: -webkit-flex;
-  background-color: #383c4a;
-  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), /* left top */ radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), /* right top */ radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), /* right bottom */ radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), /* create a base coat to smooth */ /* corner gradients */ linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); 
-      background-color: #1E3A52;
-    background-image: linear-gradient(30deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(150deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(30deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(150deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(60deg, #FE5568 25%, transparent 25.5%, transparent 75%, #FE5568 75%, #FE5568), linear-gradient(60deg, #FE5568 25%, transparent 25.5%, transparent 75%, #FE5568 75%, #FE5568);
-    background-position: 0 0, 0 0, 25px 50px, 25px 50px, 0 0, 25px 50px;
-    background-size: 50px 100px;
+  background-color: rgb(50, 54, 57);
   -moz-user-select: none;
   user-select: none;
-
 }
 
 .age-label {
