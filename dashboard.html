@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>New Tab</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/style.css">
+    <title>New Tab</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div>
+<div>
     <div class="coin -one"></div>
     <div class="coin -two"></div>
     <!-- <div class="coin -three"></div> -->
     <!-- <div class="coin -four"></div> -->
-  </div>
-  <div class="sign" style="z-index: 1;"><div id="app"></div>
-  </div>
+</div>
+<div class="sign" style="z-index: 1;">
+    <div id="app"></div>
+</div>
 <script id="dob-template" type="text/x-handlebars-template">
     <form class="form">
-    <h1 id="dob" class="age-label">When were you born?</h1>
-    <footer>
-        <label for="date"><input type="date" name="date" id="date"></label>
-      <button type="submit">Motivate</button>
-    </footer>
+        <h1 id="dob" class="age-label">When were you born?</h1>
+        <footer>
+            <label for="date"><input type="date" name="date" id="date"></label>
+            <button type="submit">Motivate</button>
+        </footer>
     </form>
 </script>
 
 <script id="age-template" type="text/x-handlebars-template">
-  <h1 class="age-label hide">AGE</h1>
-  <h2 class="count">{{year}}<sup>.{{milliseconds}}</sup></h2>
+    <h1 class="age-label hide">AGE</h1>
+    <h2 class="count">{{year}}<sup>.{{milliseconds}}</sup></h2>
 </script>
 
 <script src="js/handlebars.js"></script>
