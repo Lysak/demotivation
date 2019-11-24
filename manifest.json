@@ -6,8 +6,8 @@
    "chrome_url_overrides": {
       "newtab": "dashboard.html"
    },
-   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-   "description": "Replace new tab page with Motivation",
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "Replace new tab page with Motivation. Once installed, enter your date of birth and then, every time you open a new tab, a live calculation of your age will appear. For test click: https://motivation-new-tab.github.io/",
    "icons": {
       "128": "icon-128.png",
       "16": "icon-16.png",
@@ -16,5 +16,5 @@
    "manifest_version": 2,
    "name": "Motivation",
    "offline_enabled": true,
-   "version": "0.6.2"
+   "version": "0.6.5"
 }
