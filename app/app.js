@@ -49,13 +49,13 @@
     };
 
     App.fn.renderAgeLoop = function () {
-        this.interval = setInterval(this.renderAge.bind(this), 100);
+        setInterval(this.renderAge.bind(this), 100);
     };
 
     App.fn.renderAge = function () {
         let now = new Date;
         let duration = now - this.dob;
-        let years = duration / 31556900000;
+        let years = duration / 31556900000; // 1 year in millisecond
 
         let majorMinor = years.toFixed(9).toString().split('.');
 
