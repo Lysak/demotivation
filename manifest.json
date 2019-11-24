@@ -4,7 +4,7 @@
       "scripts": [ "motivation.js" ]
    },
    "chrome_url_overrides": {
-      "newtab": "dashboard.html"
+      "newtab": "index.html"
    },
    "content_security_policy": "script-src 'self'; object-src 'self'",
    "description": "Replace new tab page with Motivation. Once installed, enter your date of birth and then, every time you open a new tab, a live calculation of your age will appear. For test click: https://motivation-new-tab.github.io/",
