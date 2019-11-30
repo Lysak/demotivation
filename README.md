@@ -8,6 +8,6 @@ For Chrome
 
 ![](chrome_motivation_lysak.png)
 
-For Firefox add add-on from [addons.mozilla.org](https://addons.mozilla.org/ru/firefox/addon/motivation-new-tab/ "https://addons.mozilla.org/ru/firefox/addon/motivation-new-tab/")
+For Firefox add add-on from [addons.mozilla.org](https://addons.mozilla.org/ru/firefox/addon/demotivation/ "https://addons.mozilla.org/ru/firefox/addon/demotivation/")
 
 ![](firefox_motivation_lysak.png)
