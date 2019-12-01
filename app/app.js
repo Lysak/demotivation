@@ -3,7 +3,27 @@ $(document).ready(function () {
 
     localStorageData = localStorage.birthdayDate;
     if (localStorageData) {
-        $('#age-template').show();
+        renderAgeLoop();
+    } else {
+        $('#dob-template').show();
+    }
+
+    $('form').on('submit', function (e) {
+        e.preventDefault();
+
+        let birthdayDate = $(this).find('#date')[0].valueAsDate;
+
+        if (birthdayDate) {
+            localStorage.birthdayDate = birthdayDate.getTime();
+            $('#dob-template').hide();
+            renderAgeLoop();
+        } else {
+            return 'incorrect date';
+        }
+    });
+
+    function renderAgeLoop() {
+        localStorageData = localStorage.birthdayDate;
         setInterval(function () {
             parsingData = new Date(parseInt(localStorageData));
             let now = new Date;
@@ -14,17 +34,6 @@ $(document).ready(function () {
             $('#year').text(majorMinor[0]);
             $('#milliseconds').text(majorMinor[1]);
         }, 100);
-    } else {
-        $('#dob-template').show();
+        $('#age-template').show();
     }
-
-    $('form').on('submit', function (e) {
-        e.preventDefault();
-
-        let birthdayDate = $(this).find('#date')[0].valueAsDate;
-        if (!birthdayDate) return 'incorrect date';
-
-        if (birthdayDate)
-            localStorage.birthdayDate = birthdayDate.getTime();
-    });
 });

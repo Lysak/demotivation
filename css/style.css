@@ -264,15 +264,6 @@ footer {
     }
 }
 
-.sign, #dob-template {
-    z-index: 1;
-}
-
-#milliseconds {
-    font-size: 2.4rem;
-    margin-left: 7px;
-}
-
-#age-template {
+.sign, #dob-template, #age-template {
     z-index: 1;
 }
