@@ -8,6 +8,6 @@ For Chrome add add-on from [chrome.google.com/webstore](https://chrome.google.co
 
 ![](chrome.png)
 
-For Firefox add add-on from [addons.mozilla.org](https://addons.mozilla.org/ru/firefox/addon/motivation-new-tab/ "https://addons.mozilla.org/ru/firefox/addon/motivation-new-tab/")
+For Firefox add add-on from [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/motivation-new-tab/ "https://addons.mozilla.org/en-US/firefox/addon/motivation-new-tab/")
 
 ![](firefox.png)
