@@ -1,41 +1,38 @@
-/* ubuntu-300 - latin-ext_cyrillic-ext */
+/* ubuntu-300 - cyrillic_latin */
 @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-300.eot'); /* IE9 Compat Modes */
-    src: local('Ubuntu Light'), local('Ubuntu-Light'),
-    url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-300.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-300.woff') format('woff'), /* Modern Browsers */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-300.svg#Ubuntu') format('svg'); /* Legacy iOS */
+    src: url('../fonts/ubuntu-v20-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../fonts/ubuntu-v20-cyrillic_latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-
-/* ubuntu-regular - latin-ext_cyrillic-ext */
+/* ubuntu-regular - cyrillic_latin */
 @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-regular.eot'); /* IE9 Compat Modes */
-    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
-    url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
+    src: url('../fonts/ubuntu-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../fonts/ubuntu-v20-cyrillic_latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-
-/* ubuntu-700 - latin-ext_cyrillic-ext */
+/* ubuntu-500 - cyrillic_latin */
 @font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-700.eot'); /* IE9 Compat Modes */
-    src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
-    url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-700.woff') format('woff'), /* Modern Browsers */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-700.svg#Ubuntu') format('svg'); /* Legacy iOS */
-}
-
-/* ubuntu-500 - latin-ext_cyrillic-ext */
-@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-500.eot'); /* IE9 Compat Modes */
-    src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
-    url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-500.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-500.woff') format('woff'), /* Modern Browsers */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/ubuntu-v13-latin-ext_cyrillic-ext-500.svg#Ubuntu') format('svg'); /* Legacy iOS */
+    src: url('../fonts/ubuntu-v20-cyrillic_latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../fonts/ubuntu-v20-cyrillic_latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* ubuntu-700 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ubuntu-v20-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../fonts/ubuntu-v20-cyrillic_latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 *,
@@ -161,6 +158,7 @@ footer {
     margin-top: -200px;
     transform-origin: 5.5% 49%;
     border-radius: 48%;
+    will-change: transform, opacity;
     animation: drift 3000ms infinite linear;
 }
 
@@ -190,7 +188,7 @@ footer {
     from {
         transform: rotate(0deg);
     }
-    from {
+    to {
         transform: rotate(360deg);
     }
 }
