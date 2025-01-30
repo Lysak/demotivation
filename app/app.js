@@ -1,21 +1,22 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
     let localStorageData, parsingData;
 
-    localStorageData = localStorage.birthdayDate;
+    localStorageData = localStorage.getItem('birthdayDate');
     if (localStorageData) {
         renderAgeLoop();
     } else {
-        $('#dob-template').show();
+        document.getElementById('dob-template').style.display = 'block';
     }
 
-    $('form').on('submit', function (e) {
+    document.querySelector('form').addEventListener('submit', function (e) {
         e.preventDefault();
 
-        let birthdayDate = $(this).find('#date')[0].valueAsDate;
+        let birthdayDateInput = document.getElementById('date');
+        let birthdayDate = birthdayDateInput.valueAsDate;
 
         if (birthdayDate) {
-            localStorage.birthdayDate = birthdayDate.getTime();
-            $('#dob-template').hide();
+            localStorage.setItem('birthdayDate', birthdayDate.getTime());
+            document.getElementById('dob-template').style.display = 'none';
             renderAgeLoop();
         } else {
             return 'incorrect date';
@@ -23,17 +24,17 @@ $(document).ready(function () {
     });
 
     function renderAgeLoop() {
-        localStorageData = localStorage.birthdayDate;
+        localStorageData = localStorage.getItem('birthdayDate');
         setInterval(function () {
             parsingData = new Date(parseInt(localStorageData));
-            let now = new Date;
+            let now = new Date();
             let duration = now - parsingData;
-            let years = duration / 31556900000; // 1 year in millisecond
+            let years = duration / 31556900000; // 1 year in milliseconds
 
             let majorMinor = years.toFixed(9).toString().split('.');
-            $('#year').text(majorMinor[0]);
-            $('#milliseconds').text(majorMinor[1]);
+            document.getElementById('year').textContent = majorMinor[0];
+            document.getElementById('milliseconds').textContent = majorMinor[1];
         }, 100);
-        $('#age-template').show();
+        document.getElementById('age-template').style.display = 'block';
     }
 });

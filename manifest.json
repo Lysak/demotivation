@@ -1,20 +1,24 @@
 {
+   "manifest_version": 3,
+   "name": "Motivation",
+   "version": "0.7",
+   "description": "Transform your new tab page! Enter your birth date and see your live age calculation each time you open a new tab.",
+   "icons": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+   },
+   "action": {
+      "default_popup": "index.html"
+   },
    "background": {
-      "persistent": false,
-      "scripts": [ "motivation.js" ]
+      "service_worker": "motivation.js"
    },
    "chrome_url_overrides": {
       "newtab": "index.html"
    },
-   "content_security_policy": "script-src 'self'; object-src 'self'",
-   "description": "Replace new tab page with Motivation. Once installed, enter your date of birth and then, every time you open a new tab, a live calculation of your age will appear. For test click: https://motivation-new-tab.github.io/",
-   "icons": {
-      "128": "icon-128.png",
-      "16": "icon-16.png",
-      "48": "icon-48.png"
-   },
-   "manifest_version": 2,
-   "name": "Motivation",
    "offline_enabled": true,
-   "version": "0.6.6.1"
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   }
 }
